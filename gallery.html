@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dain的瓶子</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dain的瓶子 / Dain's Bottle</h1>
+    <p>Dain很喜欢你，所以给你看Dain的瓶子。</p>
+    <nav>
+      <a href="index.html">主页 / Home</a>
+      <a href="gallery.html">作品 / Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>关于 Dain / About Dain</h2>
+      <p>Dain 是一位绘画创作者，擅长表现细腻情绪与梦境般的意象。This is a space to share Dain’s thoughts and paintings.</p>
+    </section>
+
+    <section class="preview">
+      <h2>作品预览 / Featured Works</h2>
+      <div class="grid">
+        <img src="assets/sample1.jpg" alt="作品预览1" />
+        <img src="assets/sample2.jpg" alt="作品预览2" />
+        <img src="assets/sample3.jpg" alt="作品预览3" />
+      </div>
+      <p><a href="gallery.html">点击查看更多作品 →</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2025 Dain</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dain 的作品 / Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>作品展示 / Gallery</h1>
+    <nav>
+      <a href="index.html">主页 / Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="grid">
+      <img src="assets/sample1.jpg" alt="作品1" />
+      <img src="assets/sample2.jpg" alt="作品2" />
+      <img src="assets/sample3.jpg" alt="作品3" />
+    </div>
+  </main>
+
+  <footer>
+    <p> 2025 Dain</p>
+  </footer>
+</body>
+</html>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf5;
+  color: #333;
+}
+
+header {
+  background: #ffeedd;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff0e6;
+  margin-top: 40px;
+}
